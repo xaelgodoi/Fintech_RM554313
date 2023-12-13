@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background-image: url('BACKGROUNDS.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+  </style>
+  <title>Login</title>
+</head>
+<body>
+  <div class="main-login">
+    <div class="right-login">
+      <div class="card-login">
+        <h1>Acesse sua conta</h1>
+        <div class="textfield">
+          <label for="usuario">Digite seu email</label>
+          <input type="text" name="usuario" placeholder="Usuário">
+        </div>
+        <div class="textfield">
+          <label for="password">Digite sua senha</label>
+          <input type="password" name="password" placeholder="Senha">
+        </div>
+        <div class="additional-options">
+          <label for="manterLogado">
+            <input type="checkbox" id="manterLogado" name="manterLogado"> Manter logado
+          </label>
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+        <button class="btn-login" onclick="handleLogin()">Entrar</button>
+        <div class="signup-divider"></div>
+        <div class="signup-link">
+            <p>Não possui uma conta?</p>
+            <a href="criar_conta.html">CRIAR CONTA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
